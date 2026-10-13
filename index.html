@@ -3,52 +3,342 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#f7f5ef" />
-<title>Say It & Show It — Building Skills, Shaping Your Identity</title>
+<meta name="theme-color" content="#ffffff" />
+<title>Show Up — Say It & Show It: Building Skills, Shaping Your Identity</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-:root{--ink:#18251f;--muted:#68736c;--paper:#f7f5ef;--white:#fffefa;--green:#c8f169;--green-dark:#31563d;--orange:#ff7959;--line:#e4e5db;--lav:#e6e2ff;--shadow:0 20px 60px #1b2b2010}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-family:Manrope;font-weight:800;letter-spacing:-.04em}.logo{width:36px;height:36px;border-radius:12px;background:var(--green);display:grid;place-items:center;font-size:19px;transform:rotate(-5deg)}.navlinks{display:flex;gap:28px;align-items:center;color:#46534a;font-size:14px}.navlinks a:hover{color:#111}.navcta,.btn{border:0;border-radius:999px;padding:13px 19px;background:var(--ink);color:white;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:.2s}.navcta:hover,.btn:hover{transform:translateY(-2px);background:#314b39}.btn.lime{background:var(--green);color:var(--ink)}.btn.lime:hover{background:#b7e457}.btn.ghost{background:transparent;color:var(--ink);border:1px solid #cbd0c6}.hero{padding:68px 0 76px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;color:var(--green-dark);margin-bottom:22px}.dot{width:8px;height:8px;border-radius:50%;background:var(--orange)}h1{font-size:clamp(48px,6.4vw,82px);line-height:.99;margin-bottom:24px;max-width:670px}h1 em{font-style:normal;color:#668c3c} .hero p{font-size:17px;line-height:1.8;color:var(--muted);max-width:510px;margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.social-proof{display:flex;align-items:center;gap:13px;margin-top:32px;font-size:12px;color:var(--muted)}.avatars{display:flex}.avatar{width:30px;height:30px;border:2px solid var(--paper);border-radius:50%;display:grid;place-items:center;margin-left:-7px;font-size:13px;background:#f3c8b2}.avatar:first-child{margin-left:0;background:#d9e8bc}.avatar:nth-child(2){background:#ded8ff}.avatar:nth-child(3){background:#f6d78e}.hero-art{position:relative;min-height:490px;display:grid;place-items:center}.art-bg{width:90%;height:420px;background:var(--green);border-radius:48% 52% 45% 55% / 43% 43% 57% 57%;position:absolute;transform:rotate(-7deg)}.art-card{position:absolute;background:var(--white);box-shadow:var(--shadow);border:1px solid #e8e9df;border-radius:22px;padding:20px}.card-main{width:270px;left:6%;top:68px;transform:rotate(-5deg)}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;font-size:12px;color:var(--muted)}.mini-tag{background:#edf5dd;border-radius:99px;padding:6px 9px;font-weight:700;color:#456332}.card-main h3{font-size:25px;line-height:1.1;margin-bottom:9px}.card-main p{font-size:12px;line-height:1.6;margin-bottom:18px}.progress{height:7px;background:#edf0e8;border-radius:99px;overflow:hidden}.progress span{display:block;width:72%;height:100%;background:#83ad50;border-radius:99px}.profile-card{width:235px;right:0;top:205px;transform:rotate(5deg)}.profile-head{display:flex;align-items:center;gap:12px;margin-bottom:17px}.profile-pic{width:45px;height:45px;border-radius:16px;background:var(--lav);display:grid;place-items:center;font-size:24px}.profile-head strong{display:block;font-size:14px}.profile-head small{font-size:11px;color:var(--muted)}.skill-row{display:flex;gap:6px;flex-wrap:wrap}.skill{font-size:10px;padding:7px 9px;border-radius:99px;background:#f0f1eb}.sticker{position:absolute;left:10%;bottom:35px;width:110px;height:110px;background:var(--orange);border-radius:50%;display:grid;place-items:center;text-align:center;font-family:Manrope;font-weight:800;font-size:15px;line-height:1.1;transform:rotate(10deg);box-shadow:0 12px 24px #ff795930}.floating-note{position:absolute;right:10%;bottom:36px;background:var(--ink);color:white;padding:13px 16px;border-radius:14px;font-size:12px;transform:rotate(-4deg)}.strip{background:var(--ink);color:white;padding:20px 0;overflow:hidden}.strip-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.strip strong{color:var(--green);font-size:13px}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#688a44;margin-bottom:14px}.section h2{font-size:clamp(34px,4vw,52px);line-height:1.08;margin-bottom:14px}.section-head p{max-width:420px;color:var(--muted);line-height:1.7;margin-bottom:4px}.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pillar{border:1px solid var(--line);border-radius:24px;padding:28px;background:var(--white);min-height:255px;transition:.25s}.pillar:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.pillar-icon{width:48px;height:48px;border-radius:15px;background:var(--green);display:grid;place-items:center;font-size:22px;margin-bottom:28px}.pillar:nth-child(2) .pillar-icon{background:var(--lav)}.pillar:nth-child(3) .pillar-icon{background:#ffdfd4}.pillar h3{font-size:23px;margin-bottom:10px}.pillar p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:20px}.pillar .percent{font-size:12px;font-weight:800;color:var(--green-dark)}.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:70px;align-items:center}.dark-panel{background:var(--ink);color:white;border-radius:30px;padding:36px;min-height:390px;position:relative;overflow:hidden}.dark-panel:after{content:'“';position:absolute;font-family:Georgia;font-size:260px;line-height:1;color:#c8f169;opacity:.16;right:10px;bottom:-65px}.dark-panel .kicker{color:var(--green)}.dark-panel h2{font-size:clamp(34px,4vw,48px);max-width:420px}.dark-panel p{color:#c2cbc3;line-height:1.8;max-width:400px}.quote-by{display:flex;gap:10px;align-items:center;margin-top:28px;font-size:12px;color:#dce4dc}.quote-mark{width:36px;height:36px;border-radius:50%;background:var(--green);color:var(--ink);display:grid;place-items:center;font-weight:800}.steps{display:grid;gap:0}.step{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}.step:first-child{padding-top:0}.step-num{width:42px;height:42px;border:1px solid #cbd2c5;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:13px}.step h3{font-size:19px;margin-bottom:7px}.step p{font-size:14px;color:var(--muted);line-height:1.7;margin:0}.programs{background:#eeeee5}.program-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.program{border-radius:24px;background:var(--white);padding:28px;display:flex;flex-direction:column;min-height:255px}.program-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.program-emoji{width:48px;height:48px;border-radius:16px;background:#e5efcf;display:grid;place-items:center;font-size:23px}.program:nth-child(2) .program-emoji{background:#ffe0d5}.program:nth-child(3) .program-emoji{background:#e6e2ff}.program:nth-child(4) .program-emoji{background:#f8e8ad}.program small{color:var(--muted);font-weight:700}.program h3{font-size:23px;margin-bottom:9px}.program p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:22px}.text-link{font-size:13px;font-weight:800;margin-top:auto;display:inline-flex;gap:8px;align-items:center}.text-link:hover{color:#5d8438}.challenge{display:grid;grid-template-columns:1fr .85fr;gap:45px;align-items:center}.challenge h2{font-size:clamp(38px,4.5vw,58px)}.challenge p{color:var(--muted);line-height:1.8;max-width:520px}.challenge-box{background:var(--green);border-radius:28px;padding:30px;position:relative}.challenge-box h3{font-size:27px;line-height:1.15;margin:14px 0}.challenge-box p{font-size:13px;color:#43523b}.challenge-box textarea{width:100%;min-height:100px;border:1px solid #a9c47b;border-radius:14px;background:#f9ffe9;padding:13px;resize:vertical;font:inherit;outline:none}.challenge-box textarea:focus{border-color:#456332;box-shadow:0 0 0 3px #31563d20}.challenge-box .btn{margin-top:12px;background:var(--ink);width:100%}.challenge-result{display:none;background:#f9ffe9;border-radius:14px;padding:14px;margin-top:12px;font-size:13px;line-height:1.6}.challenge-result.show{display:block}.community{padding:0 0 100px}.community-inner{background:var(--lav);border-radius:30px;padding:50px;display:flex;justify-content:space-between;align-items:center;gap:30px}.community h2{font-size:clamp(34px,4vw,48px);max-width:580px;margin-bottom:12px}.community p{color:#5e5a7c;line-height:1.7;max-width:530px;margin:0}.footer{background:var(--ink);color:white;padding:45px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:start;padding-bottom:35px}.footer .brand{font-size:18px}.footer p{max-width:330px;color:#b9c4ba;font-size:13px;line-height:1.7;margin-top:16px}.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:#d9e0d9}.footer-bottom{border-top:1px solid #39463d;padding-top:20px;color:#9eaba0;font-size:11px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:13px 18px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:850px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:45px;gap:10px}.hero-art{min-height:430px}.art-bg{height:360px}.card-main{left:6%;top:55px}.profile-card{right:5%;top:180px}.section{padding:75px 0}.section-head,.split,.challenge{grid-template-columns:1fr;display:grid;gap:25px}.pillars{grid-template-columns:1fr}.pillar{min-height:0}.program-grid{grid-template-columns:1fr 1fr}.community-inner{padding:35px;align-items:start;flex-direction:column}.footer-top{flex-direction:column}}
-@media(max-width:540px){.wrap{width:min(100% - 28px,1160px)}.nav{height:70px}.navcta{padding:11px 14px;font-size:12px}.hero{padding-top:36px}.hero p{font-size:15px}.hero-art{min-height:365px}.art-bg{height:300px;width:95%}.card-main{width:210px;left:0;top:38px;padding:15px}.card-main h3{font-size:20px}.profile-card{width:190px;right:0;top:165px;padding:15px}.sticker{width:83px;height:83px;font-size:12px;left:3%;bottom:8px}.floating-note{right:0;bottom:10px;font-size:10px}.strip-inner{justify-content:center;text-align:center}.section{padding:62px 0}.section-head{margin-bottom:25px}.program-grid{grid-template-columns:1fr}.program{min-height:220px}.dark-panel{padding:27px;min-height:360px}.community-inner{padding:27px}.footer-bottom{flex-direction:column}.actions .btn{width:100%}}
+
+:root {
+  /* Palet Warna "The Confident Professional" */
+  --navy: #0F172A; /* Biru Navy (Profesional) */
+  --navy-dark: #020617; /* Biru Navy Gelap untuk Footer */
+  --orange: #FF6B35; /* Oranye Cerah (Anak Muda/Enerjik) */
+  --orange-hover: #E85A28;
+  --white: #FFFFFF;
+  --gray-bg: #F8FAFC; /* Abu-abu terang untuk background */
+  --gray-text: #64748B;
+  --border: #E2E8F0;
+  --shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--white); color: var(--navy); font-family: 'DM Sans', sans-serif; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: Manrope, sans-serif; letter-spacing: -0.03em; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+
+/* Container & Global */
+.wrap { width: min(1160px, calc(100% - 40px)); margin: auto; }
+.section { padding: 90px 0; }
+.section-head { margin-bottom: 45px; text-align: center; }
+.section-head h2 { font-size: clamp(32px, 4vw, 46px); line-height: 1.1; margin-bottom: 15px; }
+.section-head p { color: var(--gray-text); line-height: 1.7; max-width: 600px; margin: 0 auto; }
+
+/* Tombol (CTA) */
+.btn { border: 0; border-radius: 999px; padding: 14px 24px; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; }
+.btn-orange { background: var(--orange); color: var(--white); }
+.btn-orange:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3); }
+.btn-navy { background: var(--navy); color: var(--white); }
+.btn-navy:hover { background: #1e293b; transform: translateY(-2px); }
+.btn-outline { background: transparent; border: 1px solid var(--white); color: var(--white); }
+.btn-outline:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+
+/* Header / Navigasi */
+.nav-wrapper { background: var(--white); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); }
+.nav { height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: Manrope; font-weight: 800; font-size: 22px; color: var(--navy); }
+.brand span.accent { color: var(--orange); }
+.navlinks { display: flex; gap: 28px; align-items: center; font-weight: 500; font-size: 15px; color: var(--navy); }
+.navlinks a:hover { color: var(--orange); }
+.nav-right { display: flex; align-items: center; gap: 20px; }
+.ig-icon { font-weight: bold; font-size: 18px; color: var(--navy); transition: 0.2s; }
+.ig-icon:hover { color: var(--orange); transform: scale(1.1); }
+
+/* 1. Hero Section */
+.hero { background: var(--navy); color: var(--white); padding: 80px 0 100px; text-align: center; }
+.hero h1 { font-size: clamp(42px, 6vw, 72px); line-height: 1.05; max-width: 900px; margin: 0 auto 24px; }
+.hero p { font-size: 18px; line-height: 1.7; color: #cbd5e1; max-width: 700px; margin: 0 auto 35px; }
+.hero-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+/* Fitur Highlight (Masih di bawah Hero) */
+.highlights { margin-top: -50px; position: relative; z-index: 10; padding-bottom: 60px; }
+.highlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.highlight-card { background: var(--white); border-radius: 16px; padding: 30px; box-shadow: var(--shadow); text-align: center; border: 1px solid var(--border); }
+.hc-icon { width: 56px; height: 56px; background: rgba(255, 107, 53, 0.1); color: var(--orange); border-radius: 50%; display: grid; place-items: center; font-size: 24px; margin: 0 auto 20px; }
+.highlight-card h3 { font-size: 20px; color: var(--navy); margin-bottom: 12px; }
+.highlight-card p { font-size: 14px; color: var(--gray-text); line-height: 1.6; margin: 0; }
+
+/* 2. Tentang Kami */
+.about { background: var(--gray-bg); text-align: center; }
+.about-intro { max-width: 750px; margin: 0 auto 50px; }
+.about-intro h2 { font-size: clamp(28px, 4vw, 38px); margin-bottom: 20px; }
+.about-intro p { font-size: 16px; color: var(--gray-text); line-height: 1.8; }
+.philosophy { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.phil-box { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 40px; max-width: 450px; flex: 1; min-width: 300px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+.phil-box h3.say-it { color: var(--orange); font-size: 32px; margin-bottom: 15px; }
+.phil-box h3.show-it { color: var(--navy); font-size: 32px; margin-bottom: 15px; }
+
+/* 3. Show It Session */
+.show-it-session { background: var(--white); }
+.show-it-header { background: var(--navy); color: var(--white); padding: 60px 0; border-radius: 24px; text-align: center; margin-bottom: -40px; position: relative; z-index: 1; }
+.show-it-header h2 { font-size: clamp(32px, 4vw, 42px); margin: 0; }
+.session-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; position: relative; z-index: 2; margin-top: 60px; }
+.session-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 35px 25px; text-align: center; box-shadow: var(--shadow); display: flex; flex-direction: column; transition: 0.3s; }
+.session-card:hover { transform: translateY(-8px); }
+.session-card h3 { font-size: 22px; margin-bottom: 15px; }
+.session-card p { font-size: 14px; color: var(--gray-text); line-height: 1.7; margin-bottom: 25px; flex-grow: 1; }
+.session-card .btn { width: 100%; }
+
+/* 4. Pusat Edukasi & Blog */
+.education { background: var(--gray-bg); }
+.edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.edu-category h3 { font-size: 24px; border-bottom: 2px solid var(--border); padding-bottom: 15px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
+.edu-category h3 span { font-size: 12px; background: var(--orange); color: var(--white); padding: 4px 10px; border-radius: 20px; font-weight: 700; }
+.article-item { display: block; background: var(--white); padding: 20px; border-radius: 16px; margin-bottom: 15px; border: 1px solid var(--border); transition: 0.2s; }
+.article-item:hover { border-color: var(--navy); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.article-item h4 { font-size: 17px; margin: 0 0 8px 0; color: var(--navy); }
+.article-tags { font-size: 12px; color: var(--orange); font-weight: 600; }
+
+/* 5. Galeri Komunitas */
+.community { background: var(--white); text-align: center; }
+.hall-of-fame { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 40px; }
+.hof-item { aspect-ratio: 1; background: var(--gray-bg); border-radius: 16px; display: grid; place-items: center; font-weight: bold; color: var(--gray-text); border: 1px dashed #cbd5e1; }
+.hof-item:nth-child(1) { background: #f1f5f9 url('https://placehold.co/300x300/e2e8f0/64748b?text=Testimoni+1') center/cover; border:none; }
+.hof-item:nth-child(2) { background: #f1f5f9 url('https://placehold.co/300x300/e2e8f0/64748b?text=Testimoni+2') center/cover; border:none; }
+.hof-item:nth-child(3) { background: #f1f5f9 url('https://placehold.co/300x300/e2e8f0/64748b?text=UGC+Video') center/cover; border:none; }
+.hof-item:nth-child(4) { background: #f1f5f9 url('https://placehold.co/300x300/e2e8f0/64748b?text=Success+Story') center/cover; border:none; }
+
+/* Footer */
+.footer { background: var(--navy-dark); color: var(--white); padding: 60px 0 30px; }
+.footer-top { display: flex; justify-content: space-between; gap: 40px; align-items: start; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px; flex-wrap: wrap; }
+.footer .brand { color: var(--white); }
+.footer-desc { max-width: 350px; color: #94a3b8; font-size: 14px; line-height: 1.7; margin-top: 15px; }
+.footer-links { display: flex; gap: 40px; }
+.link-col h4 { margin: 0 0 15px 0; font-size: 16px; color: var(--white); }
+.link-col a { display: block; color: #94a3b8; margin-bottom: 10px; font-size: 14px; transition: 0.2s; }
+.link-col a:hover { color: var(--orange); }
+.social-links { display: flex; gap: 15px; margin-top: 15px; }
+.social-links a { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); display: grid; place-items: center; font-weight: bold; transition: 0.2s; }
+.social-links a:hover { background: var(--orange); color: var(--white); }
+.footer-bottom { display: flex; justify-content: space-between; color: #64748b; font-size: 13px; }
+
+@media(max-width: 900px) {
+  .navlinks { display: none; }
+  .highlights-grid, .session-grid, .edu-grid, .philosophy { grid-template-columns: 1fr; }
+  .hall-of-fame { grid-template-columns: repeat(2, 1fr); }
+  .footer-top { flex-direction: column; }
+  .footer-links { flex-wrap: wrap; }
+}
+@media(max-width: 540px) {
+  .hero h1 { font-size: 32px; }
+  .nav-right .ig-icon { display: none; }
+}
 </style>
 </head>
 <body>
-<header class="wrap nav">
-  <a class="brand" href="#home" aria-label="Say It and Show It home"><span class="logo">S!</span><span>say it <span style="color:#789d4c">&</span> show it.</span></a>
-  <nav class="navlinks"><a href="#about">Tentang</a><a href="#programs">Program</a><a href="#journey">Cara Kerja</a><a href="#challenge">Challenge</a></nav>
-  <a class="navcta" href="#challenge">Mulai berkembang <span>↗</span></a>
-</header>
-<main>
-<section class="wrap hero" id="home">
-  <div>
-    <div class="eyebrow"><span class="dot"></span> Your growth starts here</div>
-    <h1>Build your skills.<br>Own your <em>story.</em></h1>
-    <p>Kamu punya potensi. Sekarang saatnya belajar menyampaikannya dan menunjukkan value dirimu. Ruang bertumbuh untuk mahasiswa dan generasi muda yang siap melangkah lebih percaya diri.</p>
-    <div class="actions"><a class="btn" href="#programs">Jelajahi program <span>↗</span></a><a class="btn ghost" href="#about">Kenali brand kami</a></div>
-    <div class="social-proof"><div class="avatars"><span class="avatar">✦</span><span class="avatar">☺</span><span class="avatar">↗</span></div><span><strong style="color:var(--ink)">Belajar. Praktik. Tunjukkan.</strong><br>Progress kecil tetap berarti.</span></div>
-  </div>
-  <div class="hero-art" aria-label="Ilustrasi kartu pengembangan skill dan profil profesional"><div class="art-bg"></div>
-    <div class="art-card card-main"><div class="card-top"><span>YOUR GROWTH PLAN</span><span class="mini-tag">IN PROGRESS</span></div><h3>Small steps.<br>Real progress.</h3><p>Setiap skill yang kamu latih adalah bagian dari cerita profesionalmu.</p><div class="progress"><span></span></div><div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:8px"><span>Weekly progress</span><strong>72%</strong></div></div>
-    <div class="art-card profile-card"><div class="profile-head"><div class="profile-pic">✳</div><div><strong>Your next chapter</strong><small>Professional identity</small></div></div><div style="font-size:11px;color:var(--muted);margin-bottom:10px">SKILLS TO SHOW</div><div class="skill-row"><span class="skill">Communication</span><span class="skill">Confidence</span><span class="skill">Personal brand</span><span class="skill">Career ready</span></div></div>
-    <div class="sticker">SAY IT.<br>SHOW IT.<br>BE YOU.</div><div class="floating-note">✦ Potensimu layak terlihat</div>
+
+<!-- Header Navigasi -->
+<div class="nav-wrapper">
+  <header class="wrap nav">
+    <a class="brand" href="#home">
+      Show<span class="accent">Up</span>
+    </a>
+    <nav class="navlinks">
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#show-it">Show It Session</a>
+      <a href="#edukasi">Artikel & Edukasi</a>
+      <a href="#komunitas">Galeri Komunitas</a>
+    </nav>
+    <div class="nav-right">
+      <a href="https://instagram.com/ShowUp" target="_blank" class="ig-icon" aria-label="Instagram">IG</a>
+      <a class="btn btn-orange" style="padding: 10px 18px;" href="#show-it">Mulai "Show Up"</a>
+    </div>
+  </header>
+</div>
+
+<!-- 1. Halaman Beranda (Homepage) - Hero Section -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>Say It & Show It: Building Skills, Shaping Your Identity.</h1>
+    <p>Platform suportif yang menemani kamu membangun skill komunikasi, meningkatkan kepercayaan diri, dan berani menunjukkan value dirimu ke dunia profesional.</p>
+    <div class="hero-actions">
+      <a class="btn btn-orange" href="#show-it">Ikuti Challenge Hari Ini!</a>
+      <a class="btn btn-outline" href="#about">Pelajari Lebih Lanjut</a>
+    </div>
   </div>
 </section>
-<div class="strip"><div class="wrap strip-inner"><strong>Learn it</strong><span>✳</span><span>Practice it</span><span>✳</span><strong>Show it</strong><span>✳</span><span>Grow into your next self</span></div></div>
-<section class="section wrap" id="about"><div class="section-head"><div><div class="kicker">What we're here for</div><h2>Bukan cuma punya skill.<br>Berani menunjukkannya.</h2></div><p>Say It & Show It adalah platform pengembangan diri yang menemani kamu membangun kemampuan, menemukan identitas profesional, dan berani menunjukkan value-mu.</p></div>
-<div class="pillars"><article class="pillar"><div class="pillar-icon">◉</div><h3>Say It</h3><p>Latih keberanian untuk berbicara, menyampaikan ide, memperkenalkan diri, dan membangun koneksi dengan lebih efektif.</p><span class="percent">COMMUNICATION SKILLS</span></article><article class="pillar"><div class="pillar-icon">✳</div><h3>Show It</h3><p>Ubah pengalaman, karya, dan kemampuan menjadi CV, portofolio, serta personal branding yang menunjukkan value dirimu.</p><span class="percent">SELF-PRESENTATION</span></article><article class="pillar"><div class="pillar-icon">↗</div><h3>Grow Forward</h3><p>Bangun kepercayaan diri dan kesiapan profesional lewat latihan nyata, feedback suportif, dan proses belajar berkelanjutan.</p><span class="percent">CAREER READINESS</span></article></div></section>
-<section class="section wrap" id="journey"><div class="split"><div class="dark-panel"><div class="kicker">Our approach</div><h2>Tempat aman untuk mencoba, ruang nyata untuk berkembang.</h2><p>Kamu tidak harus langsung percaya diri untuk memulai. Kamu hanya perlu kesempatan untuk berlatih, belajar dari feedback, dan mencoba lagi.</p><div class="quote-by"><span class="quote-mark">S!</span><span><strong>Say It & Show It</strong><br>Building Skills, Shaping Your Identity</span></div></div><div><div class="kicker">Your growth journey</div><h2>Mulai dari yang kamu punya.</h2><div class="steps"><div class="step"><span class="step-num">01</span><div><h3>Kenali potensimu</h3><p>Temukan skill, pengalaman, dan hal yang ingin kamu kembangkan.</p></div></div><div class="step"><span class="step-num">02</span><div><h3>Belajar & praktik</h3><p>Ikuti tips praktis, simulasi, challenge, dan aktivitas yang dekat dengan keseharianmu.</p></div></div><div class="step"><span class="step-num">03</span><div><h3>Tunjukkan kemampuanmu</h3><p>Latih cara bercerita tentang diri sendiri lewat komunikasi, CV, portofolio, dan personal branding.</p></div></div><div class="step"><span class="step-num">04</span><div><h3>Tumbuh bersama</h3><p>Dapatkan feedback dan dukungan komunitas untuk terus berkembang.</p></div></div></div></div></div></section>
-<section class="section programs" id="programs"><div class="wrap"><div class="section-head"><div><div class="kicker">Explore & practice</div><h2>Skill yang bisa langsung<br>kamu praktikkan.</h2></div><p>Belajar lewat contoh nyata dan aktivitas interaktif. Pilih area yang ingin kamu kembangkan lebih dulu.</p></div><div class="program-grid"><article class="program"><div class="program-head"><span class="program-emoji">🎤</span><small>01 / SAY IT</small></div><h3>Speak with Confidence</h3><p>Public speaking, presentation skills, menyampaikan pendapat, dan latihan pitch diri dalam berbagai situasi.</p><a class="text-link" href="#challenge" data-topic="Speak with Confidence">Coba latihan <span>↗</span></a></article><article class="program"><div class="program-head"><span class="program-emoji">🧩</span><small>02 / SHOW IT</small></div><h3>Build Your Personal Brand</h3><p>Kenali value diri, susun personal branding statement, dan ceritakan pengalamanmu secara autentik.</p><a class="text-link" href="#challenge" data-topic="Build Your Personal Brand">Coba latihan <span>↗</span></a></article><article class="program"><div class="program-head"><span class="program-emoji">📁</span><small>03 / CAREER READY</small></div><h3>CV & Portfolio Lab</h3><p>Belajar mengemas pengalaman organisasi, proyek, dan karya menjadi bukti kompetensi yang jelas.</p><a class="text-link" href="#challenge" data-topic="CV & Portfolio Lab">Coba latihan <span>↗</span></a></article><article class="program"><div class="program-head"><span class="program-emoji">🤝</span><small>04 / GROW FORWARD</small></div><h3>Interview & Networking</h3><p>Persiapkan jawaban interview, mulai percakapan profesional, dan bangun koneksi dengan lebih nyaman.</p><a class="text-link" href="#challenge" data-topic="Interview & Networking">Coba latihan <span>↗</span></a></article></div></div></section>
-<section class="section wrap challenge" id="challenge"><div><div class="kicker">Your first step</div><h2>Kalau bukan mulai sekarang, kapan lagi?</h2><p>Mulai dari latihan kecil. Tulis satu kemampuan atau pengalaman yang ingin kamu tunjukkan, lalu ubah menjadi kalimat perkenalan diri yang lebih percaya diri.</p><p style="font-size:13px">Tidak perlu sempurna. Yang penting mulai berani menyampaikan value-mu.</p></div><div class="challenge-box"><div style="font-size:12px;font-weight:800;letter-spacing:.12em">✦ MINI CHALLENGE</div><h3>Pitch yourself<br>in 3 sentences.</h3><p>Siapa kamu, apa yang kamu bisa, dan apa yang ingin kamu kembangkan?</p><textarea id="pitch" placeholder="Contoh: Saya mahasiswa komunikasi yang tertarik pada... Saya pernah... Saat ini saya ingin mengembangkan..."></textarea><button class="btn" id="reviewBtn">Bantu rapikan kalimatku ↗</button><div class="challenge-result" id="result" aria-live="polite"></div></div></section>
-<section class="wrap community"><div class="community-inner"><div><div class="kicker">You don't grow alone</div><h2>Potensimu layak didengar dan dilihat.</h2><p>Ikuti konten, tantangan, dan sesi praktik Say It & Show It. Ambil satu langkah kecil hari ini, lalu terus berkembang bersama.</p></div><a class="btn" href="#programs">Temukan langkahmu <span>↗</span></a></div></section>
-</main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="#home"><span class="logo">S!</span><span>say it <span style="color:var(--green)">&</span> show it.</span></a><p>Building Skills, Shaping Your Identity. Platform pengembangan diri untuk generasi muda yang siap menunjukkan value-nya.</p></div><div class="footer-links"><a href="#about">Tentang kami</a><a href="#programs">Program</a><a href="#journey">Cara kerja</a><a href="#challenge">Mini challenge</a></div></div><div class="footer-bottom"><span>© 2026 Say It & Show It. Prototype website.</span><span>Belajar. Praktik. Tunjukkan.</span></div></div></footer>
-<div class="toast" id="toast" role="status">Siap untuk langkah pertamamu ✦</div>
+
+<!-- Highlight Section -->
+<section class="highlights wrap">
+  <div class="highlights-grid">
+    <div class="highlight-card">
+      <div class="hc-icon">🎯</div>
+      <h3>Practice (Show It Session)</h3>
+      <p>Wadah berlatih dan dapatkan peer-feedback langsung untuk kembangkan potensimu.</p>
+    </div>
+    <div class="highlight-card">
+      <div class="hc-icon">📚</div>
+      <h3>Learn (Edukasi)</h3>
+      <p>Insight sehari-hari & panduan masa depan untuk atasi rasa insecure-mu.</p>
+    </div>
+    <div class="highlight-card">
+      <div class="hc-icon">🤝</div>
+      <h3>Connect (Komunitas)</h3>
+      <p>Ruang aman untuk bertumbuh bersama dan memperluas networking-mu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Halaman Tentang Kami -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-intro">
+      <h2>Sering overthinking sebelum bicara?<br>Atau bingung nulis apa di CV padahal pengalamanmu banyak? You're not alone.</h2>
+      <p>Kami paham tantangan terbesar mahasiswa dan fresh graduate. Punya potensi dan semangat besar, tapi sering kali terhalang rasa kurang percaya diri saat harus menunjukkannya ke dunia profesional.</p>
+    </div>
+    
+    <div class="philosophy">
+      <div class="phil-box">
+        <h3 class="say-it">SAY IT.</h3>
+        <p><strong>Keberanianmu untuk bersuara.</strong><br>Mulai dari public speaking, presentasi di depan kelas, hingga kemampuan menyampaikan gagasan secara jelas dan terstruktur.</p>
+      </div>
+      <div class="phil-box">
+        <h3 class="show-it">SHOW IT.</h3>
+        <p><strong>Keberanianmu untuk tampil.</strong><br>Menunjukkan kompetensi lewat personal branding, membangun portofolio, dan merancang CV yang standout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Halaman Show It Session -->
+<section class="section show-it-session" id="show-it">
+  <div class="wrap">
+    <div class="show-it-header">
+      <h2>Waktunya Unjuk Gigi. Learn It, Practice It, Show It!</h2>
+    </div>
+    
+    <div class="session-grid">
+      <div class="session-card">
+        <h3>📄 Rate My CV</h3>
+        <p>Upload draf CV-mu dalam format PDF dan dapatkan feedback konstruktif langsung dari sesama member komunitas.</p>
+        <button class="btn btn-orange" onclick="alert('Fitur Upload CV akan segera hadir!')">Mulai Rate My CV</button>
+      </div>
+      <div class="session-card">
+        <h3>🎥 Pitch Yourself Challenge</h3>
+        <p>Submit video perkenalan dirimu berdurasi 1 menit. Latih keberanianmu berbicara di depan kamera.</p>
+        <button class="btn btn-orange" onclick="alert('Challenge sedang disiapkan!')">Ikuti Challenge</button>
+      </div>
+      <div class="session-card">
+        <h3>💼 Mock Interview Board</h3>
+        <p>Jawab pertanyaan interview simulasi bulan ini dan pelajari cara menjawab dari peserta lain.</p>
+        <button class="btn btn-orange" onclick="alert('Masuk ke Mock Interview Board')">Coba Simulasi</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Pusat Edukasi & Blog -->
+<section class="section education" id="edukasi">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Artikel & Edukasi</h2>
+      <p>Sumber insight untuk menemani progres keseharianmu.</p>
+    </div>
+    
+    <div class="edu-grid">
+      <!-- Kategori 1 -->
+      <div class="edu-category">
+        <h3>Obrolan Sehari-hari <span>Daily</span></h3>
+        <a href="#" class="article-item">
+          <h4>Solusi Saat Tiba-tiba Nge-blank Pas Ditanya Dosen</h4>
+          <span class="article-tags">#PublicSpeaking #Kuliah</span>
+        </a>
+        <a href="#" class="article-item">
+          <h4>Cara Nulis Pengalaman Organisasi di CV Biar Gak Kelihatan "Kosong"</h4>
+          <span class="article-tags">#CareerReadiness #CV</span>
+        </a>
+      </div>
+      
+      <!-- Kategori 2 -->
+      <div class="edu-category">
+        <h3>Siap Hadapi Masa Depan <span>Visionary</span></h3>
+        <a href="#" class="article-item">
+          <h4>Communication in the AI Era: Skill Manusia yang Gak Bisa Diganti Robot</h4>
+          <span class="article-tags">#FutureSkills #Networking</span>
+        </a>
+        <a href="#" class="article-item">
+          <h4>Mengatasi Impostor Syndrome: Kamu Lebih Keren dari yang Kamu Pikirkan</h4>
+          <span class="article-tags">#PersonalBranding #Mindset</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Galeri Komunitas & UGC -->
+<section class="section community" id="komunitas">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Hall of Fame: Mereka yang Sudah #ShowUp</h2>
+      <p>Inspirasi dari teman-teman yang telah berani mengambil langkah pertama dan membagikan ceritanya.</p>
+    </div>
+    
+    <div class="hall-of-fame">
+      <div class="hof-item"></div>
+      <div class="hof-item"></div>
+      <div class="hof-item"></div>
+      <div class="hof-item"></div>
+    </div>
+    
+    <a class="btn btn-navy" href="#">Punya cerita suksesmu sendiri? Bagikan di sini!</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#home" style="font-size: 26px;">Show<span class="accent">Up</span></a>
+        <p class="footer-desc">Say It & Show It.<br>Wadah berlatih, belajar, dan terkoneksi untuk membantu kamu membangun skill dan menunjukan identitas profesionalmu.</p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">IN</a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>Sitemap</h4>
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#show-it">Show It Session</a>
+        </div>
+        <div class="link-col">
+          <h4>Resources</h4>
+          <a href="#edukasi">Artikel Edukasi</a>
+          <a href="#komunitas">Galeri Komunitas</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span>Hak Cipta &copy; 2026 Show Up.</span>
+      <span>Say It & Show It.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Google Analytics / Meta Pixel Placeholder -->
 <script>
-const toast=document.getElementById('toast');let toastTimer;function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2600)}
-document.querySelectorAll('[data-topic]').forEach(link=>link.addEventListener('click',()=>{const topic=link.dataset.topic;setTimeout(()=>{const box=document.getElementById('pitch');box.focus();box.placeholder='Mulai ceritakan dirimu untuk latihan: '+topic+'...';},350)}));
-document.getElementById('reviewBtn').addEventListener('click',()=>{const val=document.getElementById('pitch').value.trim();const result=document.getElementById('result');if(!val){result.textContent='Yuk, mulai dengan menuliskan satu pengalaman, kemampuan, atau hal yang ingin kamu pelajari. Tidak harus sempurna—mulai saja dulu!';result.classList.add('show');return;}const cleaned=val.replace(/\s+/g,' ');result.innerHTML='<strong>Draft awalmu sudah ada! ✦</strong><br>Gunakan struktur ini untuk membuatnya lebih kuat:<br><br><strong>1. Saya adalah...</strong> — perkenalkan dirimu secara singkat.<br><strong>2. Saya memiliki pengalaman/ketertarikan dalam...</strong> — tambahkan contoh atau bukti nyata.<br><strong>3. Saya sedang mengembangkan...</strong> — tunjukkan arah pertumbuhanmu.<br><br><span style="color:#53664b">Catatanmu: “'+cleaned.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))+'”</span><br><br>Tips: buat spesifik, jujur, dan fokus pada value yang ingin kamu tunjukkan.';result.classList.add('show');showToast('Good start! Terus latih cara kamu bercerita.');});
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{if(a.getAttribute('href')==='#programs')showToast('Pilih skill yang ingin kamu kembangkan ✦')}));
+  // Script untuk Digital Analytics (Google Analytics / Facebook Pixel) bisa ditempatkan di sini
+  // untuk melacak aktivitas di "Show It Session" atau "Artikel Edukasi".
+  console.log("Analytics Ready: Tracking user flow to Show It Sessions and Education sections.");
 </script>
+
 </body>
 </html>
